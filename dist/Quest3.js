@@ -11,7 +11,7 @@ var Funcionarios = /** @class */ (function () {
             return this._nome;
         },
         set: function (nome) {
-            if (nome = '') {
+            if (nome == '') {
                 throw new Error('Nome invalido.');
             }
             this._nome = nome;
@@ -93,7 +93,7 @@ var f = new Funcionarios('Gabriel', 100, 24, 3);
 console.log("O funcion\u00E1rio de nome " + f.nome + " tem o sal\u00E1rio bruto de " + f.bruto() + ", teve " + f.faltasTOT + " falta(s) e sua PLR foi de " + f.plr());
 console.log("O funcion\u00E1rio de nome " + f.nome + " tem o sal\u00E1rio bruto de " + f.bruto() + ", o desconto de " + f.desconto() + ", a PLR de " + f.plr() + " e o sal\u00E1rio l\u00EDquido de " + f.salarioLiq() + " ");
 try {
-    f.nome = 'José';
+    f.nome = "Maria";
     f.salarioH = 200;
     f.diasTrab = 25;
     f.faltasTOT = 2;
