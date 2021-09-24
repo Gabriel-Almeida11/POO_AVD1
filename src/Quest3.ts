@@ -24,7 +24,7 @@ class Funcionarios{
 
 
         set nome(nome:string) {
-            if(nome = ''){
+            if(nome == ''){
                 throw new Error('Nome invalido.')
             }
             
@@ -99,7 +99,7 @@ console.log(`O funcionário de nome ${f.nome} tem o salário bruto de ${f.bruto(
 
 try{
 
-    f.nome= 'José'
+    f.nome="Maria"
     f.salarioH= 200
     f.diasTrab= 25
     f.faltasTOT= 2
@@ -107,7 +107,7 @@ try{
     console.log(`O funcionário de nome ${f.nome} tem o salário bruto de ${f.bruto()}, teve ${f.faltasTOT} falta(s) e sua PLR foi de ${f.plr()}`)
 
     console.log(`O funcionário de nome ${f.nome} tem o salário bruto de ${f.bruto()}, o desconto de ${f.desconto()}, a PLR de ${f.plr()} e o salário líquido de ${f.salarioLiq()} `)
-
+    
     
 
    
