@@ -58,7 +58,7 @@ var Produto = /** @class */ (function () {
             return this.preco * 0.25;
     };
     Produto.prototype.valor = function () {
-        return this.preco - this.desconto();
+        return (this.preco * this.quantidade) - (this.desconto() * this.quantidade);
     };
     return Produto;
 }());

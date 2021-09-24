@@ -89,9 +89,9 @@ class Funcionarios{
 }
 
 let f = new Funcionarios ('Gabriel', 100, 24, 3)
-console.log(`O funcionário de nome ${f.nome} tem o salário bruto de ${f.bruto()}, teve ${f.faltasTOT} falta(s) e sua PLR foi de ${f.plr()}`)
+// console.log(`O funcionário de nome ${f.nome} tem o salário bruto de ${f.bruto()}, teve ${f.faltasTOT} falta(s) e sua PLR foi de ${f.plr()}`)
 
-console.log(`O funcionário de nome ${f.nome} tem o salário bruto de ${f.bruto()}, o desconto de ${f.desconto()}, a PLR de ${f.plr()} e o salário líquido de ${f.salarioLiq()} `)
+// console.log(`O funcionário de nome ${f.nome} tem o salário bruto de ${f.bruto()}, o desconto de ${f.desconto()}, a PLR de ${f.plr()} e o salário líquido de ${f.salarioLiq()} `)
 
 
 
@@ -102,7 +102,7 @@ try{
     f.nome="Maria"
     f.salarioH= 200
     f.diasTrab= 25
-    f.faltasTOT= 2
+    f.faltasTOT= 0
 
     console.log(`O funcionário de nome ${f.nome} tem o salário bruto de ${f.bruto()}, teve ${f.faltasTOT} falta(s) e sua PLR foi de ${f.plr()}`)
 
